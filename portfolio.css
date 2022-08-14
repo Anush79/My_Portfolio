@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+:root {
+
+    --primaary: #2A0944;
+    --primary: linear-gradient(125deg, rgb(42, 9, 68) 20%, rgb(161, 0, 53)70%);
+    --secondary: #3FA796;
+    --tertiary: #FEC260;
+    --button: #A10035;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    color: var(--tertiary);
+
+}
+
+body {
+    background: var(--primary);
+    overflow: auto;
+
+}
+
+header {
+
+    margin-left: 10px;
+    max-width: 110px;
+    text-shadow: .2em .1em .1em var(--button);
+    border-radius: 70%;
+    border-bottom-right-radius: 30%;
+    border: 10px solid #2A0944;
+    border-top: #FEC260;
+    border-left: #FEC260;
+    padding: 10px;
+}
+
+header h2 {
+    color: var(--primary);
+    padding: 0px;
+
+}
+
+.nav {
+    
+    background: var(--tertiary);
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.navlist {
+    position: relative;
+    font-size: large;
+    list-style: none;
+    margin-left: 45%;
+    display: flex;
+    padding: 0;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: var(--button);
+    margin: 10px
+}
+
+.navlist li a:hover {
+    transition: 0.6s;
+    font-size: larger;
+    text-shadow: 0.4em 0.4em 0.2em var(--button);
+}
+
+.content {
+    display: flex;
+    min-height: 560px;
+
+}
+
+.content .intro {
+    margin-top: 12%;
+    min-width: 40%;
+    max-width: 50%;
+    font-size: 30px;
+
+}
+
+.content .intro p {
+    font-size: 1.4rem;
+}
+
+.hero img {
+    max-height: 600px;
+    display: block;
+
+}
+
+.hero {
+    margin-top: 30px;
+    padding: 0px;
+
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+.tech,
+.projects,
+.blogs {
+    display: flex;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0px;
+    border-radius: 1rem;
+    font-size: x-large;
+}
+
+img {
+    max-height: 300px;
+}
+
+div p {
+    margin: 25px;
+    font-size: large;
+    min-width: 30%;
+}
+
+h3 {
+    text-decoration: wavy;
+    text-shadow: 0.1em 0.3em 0.2em var(--button);
+}
+
+button {
+    background: var(--primaary);
+    padding: 10px;
+    border-radius: 20px;
+    border: var(--primary);
+    margin: 15px;
+
+}
+
+footer {
+    background: var(--tertiary);
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--button);
+}
+
+footer h2 {
+    color: var(--button);
+    text-align: center;
+}
+
+footer ul {
+    text-align: center;
+
+}
+
+footer ul li {
+    display: inline;
+    color: var(--button);
+
+}
