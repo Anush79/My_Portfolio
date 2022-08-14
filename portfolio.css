@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 :root {
 
     --primaary: #2A0944;
@@ -13,7 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Mulish", sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+font-family: 'Quicksand', sans-serif;
     padding-left: 2rem;
     padding-right: 2rem;
 
@@ -127,7 +127,11 @@ img {
 div p {
     margin: 25px;
     font-size: large;
-    min-width: 30%;
+    min-width: 60%;
+}
+
+.projects div{
+    min-width: 60%;
 }
 
 h3 {
@@ -143,6 +147,8 @@ button {
     margin: 15px;
 
 }
+
+
 
 footer {
     background: var(--tertiary);
