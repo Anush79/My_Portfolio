@@ -67,7 +67,8 @@ header h2 {
 .navlist li a {
     text-decoration: none;
     color: var(--button);
-    margin: 10px
+    margin: 10px;
+    font-weight: 800;
 }
 
 .navlist li a:hover {
