@@ -16,6 +16,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   color: var(--tertiary);
+  text-decoration: none;
 }
 
 body {
@@ -48,7 +49,7 @@ header h2 {
 
 .navlist {
   position: relative;
-  left: 35%;
+  left: 45%;
   font-size: large;
   list-style: none;
   display: inline-flex;
