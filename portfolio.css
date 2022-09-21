@@ -64,7 +64,6 @@ header h2 {
 
 .navlistrow a:hover {
   transition: 0.6s;
-  font-size: larger;
   text-shadow: 0.4em 0.4em 0.2em var(--button);
 }
 

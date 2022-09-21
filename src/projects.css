@@ -1,0 +1,77 @@
+#project_list {
+  text-align: end;
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  list-style: none;
+}
+.mark {
+  padding: 10px;
+  margin: 20px;
+  height: 300px;
+  transition: 0.3s;
+}
+
+h3 {
+  text-shadow: none;
+  color: #a10035;
+  margin: 10px 0px;
+  background: #fec260;
+  padding: 5px;
+  width: 460px;
+  transition: ease-in 3s;
+}
+h3:hover {
+  animation: mymove 2s;
+}
+img {
+  position: absolute;
+  width: 30%;
+  height: 26%;
+  left: 301px;
+  z-index: -1;
+}
+.mark p {
+  position: relative;
+  display: inline-block;
+  left: 45%;
+  width: 50%;
+  text-align: justify;
+}
+button {
+    position: relative;
+  transform: scale(0.8);
+  display: inline;
+  position: relative;
+  top:15%;
+  padding: 10px 0px;
+}
+
+#code {
+  background: none;
+  border: 3px dashed #fec260;
+  padding: 10px;
+}
+#demo {
+  border: 3px dotted #fec260;
+  border-left: none;
+  border-right: none;
+
+}
+button:hover,
+button:focus-visible {
+  transform: scale(1.2);
+  letter-spacing: normal;
+}
+@keyframes mymove {
+  0% {
+    width: 460px;
+  }
+
+  75% {
+    width: 660px;
+  }
+  100% {
+    width: 460px;
+  }
+}
