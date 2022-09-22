@@ -27,9 +27,9 @@ body {
 header {
   margin-left: 10px;
   max-width: 160px;
-  border-radius: 23%;
-  border-bottom-right-radius: 10%;
-  border: 10px solid #2a0944;
+  border-radius: 63%;
+  border-bottom-right-radius: 1%;
+  border: 5px solid #2a0944;
   border-top: #fec260;
   border-left: #fec260;
   padding: 10px;
@@ -127,10 +127,16 @@ button {
   border-radius: 20px;
   border: var(--primary);
   margin: 15px;
+  border-bottom: 3px solid #fec260;
+  border-left: 2px solid #fec260;
+  transform: scale(1.4);
+  cursor: pointer;
 }
 button:hover{
-  letter-spacing: 1.2px;
-  transition:0.3s;
+  letter-spacing: 0px;
+  transform: scale(1.35);
+  border: none;
+  transition: 0.5s;
 }
 footer {
   background: var(--tertiary);
@@ -148,9 +154,10 @@ footer h2 {
 footer ul {
   text-align: center;
 }
-
-footer ul li {
+footer ul li{
   display: inline;
+}
+footer ul li a{
   color: var(--button);
 }
 

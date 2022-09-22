@@ -60,8 +60,10 @@ button {
 }
 button:hover,
 button:focus-visible {
+
   transform: scale(1.2);
   letter-spacing: normal;
+  transition: 0.4s;
 }
 @keyframes mymove {
   0% {

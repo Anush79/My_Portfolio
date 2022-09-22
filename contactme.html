@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Anushka!</title>
-    <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="src/contacts.css" />
+  </head>
+  <body>
     <div class="nav">
-        <header>
-            <h2>Anushka</h2>
-        </header>
+      <header>
+        <h2>Anushka</h2>
+      </header>
 
-        <ul class="navlist">
-            <li class="navlistrow"><a href="/index.html">Home</a></li>
-            <li class="navlistrow"><a href="/projects.html">Projects</a></li>
-            <li class="navlistrow"><a href="/blogs.html">Blogs</a></li>
-            <li class="navlistrow"><a href="/contactme.html">Contact</a></li>
-        </ul>
-    </div> 
+      <ul class="navlist">
+        <li class="navlistrow"><a href="/index.html">Home</a></li>
+        <li class="navlistrow"><a href="/projects.html">Projects</a></li>
+        <li class="navlistrow"><a href="/blogs.html">Blogs</a></li>
+        <li class="navlistrow"><a href="/contactme.html">Contact</a></li>
+      </ul>
+    </div>
 
     <div class="container">
-        <h1>Write to me</h1>
-        <form target="_blank" action="https://formsubmit.co/barbieworld1056.a@gmail.com" method="POST">
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col">
-                <input type="text" name="name"placeholder="Full Name" required>
-              </div>
-              <div class="col">
-                <input type="email" name="email"placeholder="Email Address" required>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      <div class="contactLinks">
+        <div class="blank">Connect with me here 👇 </div>
+        <img
+          id="hero"
+          src="svg/social_media.svg"
+          alt="girl with social media picture"
+        />
+        <a  href="https://twitter.com/TheIndianGirl56"
+        target="_blank"><img src="svg/twitter.gif" id="twitter" alt="" /> </a
+        >
+        <a  href="https://github.com/Anush79"
+        target="_blank"><img src="svg/github.gif" id="github"alt="" /> </a
+        >
+        <a
+          
+          href="https://www.linkedin.com/in/anushka-jaiswal-46258918a/"
+          target="_blank"><img src="svg/linkedin.gif" id="linkedin" alt="" /> </a
+        >
+     
+      </div>
+
+      <div class="ContactForm">
+        <h1>🖋 Write to me</h1>
+        <form
+          target="_blank"
+          action="https://formsubmit.co/barbieworld1056.a@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Full Name" required />
+<br>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <br>
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+<br>
+          <button type="submit" class="btn btn-lg btn-dark btn-block">
+            Send Message
+          </button>
         </form>
       </div>
-</body>
+    </div>
+  </body>
 </html>

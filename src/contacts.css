@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  max-height: none;
+}
+.blank {
+  color: var(--button);
+  font-weight: bold;
+  position: relative;
+  height: 380px;
+  width: 260px;
+  left: 150px;
+  top: 110px;
+  z-index: 1;
+  background-color: aliceblue;
+}
+.contactLinks #hero {
+  position: absolute;
+  top: 25%;
+  z-index: -1;
+  width: 50%;
+}
+.contactLinks a img {
+  position: relative;
+  max-height: 150px;
+  height: 60px;
+  width: auto;
+  background-color: aliceblue;
+  border-radius: 50%;
+  border: 3px solid #fec260;
+  z-index: 2;
+}
+#linkedin {
+  position: absolute;
+  left: 20%;
+  top: 255px;
+  height: 78px;
+  padding: 0;
+  transform: scale(1.2);
+}
+#twitter {
+  position: absolute;
+  top: 370px;
+  left: 455px;
+  transform: scale(1.6);
+  padding: 0;
+}
+#github {
+  position: absolute;
+  left: 22%;
+  padding: 0;
+  transform: scale(1.6);
+}
+
+.ContactForm {
+  text-align: center;
+  width: 40%;
+  height: 70%;
+  margin: 23px;
+  margin-left: 130px;
+}
+
+input,
+textarea {
+  text-align: center;
+  border-radius: 14px;
+  color: var(--button);
+  font-weight: bold;
+  margin: 3%;
+  font-size: 20px;
+  padding: 10px;
+  width: 400px;
+  border-top: 5px solid #3c025b;
+  
+}
+button {
+  border-bottom: 3px solid #fec260;
+  border-left: 2px solid #fec260;
+  transform: scale(1.4);
+}
+button:hover {
+  letter-spacing: 0px;
+  transform: scale(1.35);
+  border: none;
+}

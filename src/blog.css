@@ -15,4 +15,14 @@
   #more{
     display:none;
   }
- 
+ .hero p{
+  margin-top: 2px;
+  font-size:35px ;
+ }
+  .hero img{
+    margin: auto;
+    transform: scale(0.8);
+  }
+  button:hover{
+    transform: none;
+  }
