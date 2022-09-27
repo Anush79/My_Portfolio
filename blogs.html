@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyBlogs</title>
     <link rel="stylesheet" href="portfolio.css" />
-    <link rel="stylesheet" href="src/blog.css">
+    <link rel="stylesheet" href="src/blog.css" />
   </head>
   <body>
     <div class="nav">
@@ -22,74 +22,192 @@
       </ul>
     </div>
     <div class="hero">
-      <p>“Blogging is a conversation, not a code.”</p><small>- Mike Butcher</small>
-      <img src="svg/blogs.svg" alt="">
+      <p>“Blogging is a conversation, not a code.”</p>
+      <small>- Mike Butcher</small>
+      <img src="svg/blogs.svg" alt="" />
     </div>
     <div class="blog-content">
-      <div class="left">
-        <div class="blogs" id="one">
-          <h3>This is a Dummy Blog 1, Nothing special</h3>
-          <h4>Something something</h4>
-          <small>15 August 2022</small>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-          <button onclick="ReadMore()"class="readMore">Read More</button>
-        </div>
-        <div class="blogs"id="two">
-          <h3>This is a Dummy Blog 2, Nothing special</h3>
-          <h4>Something something</h4>
-          <small>15 August 2022</small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-          <button onclick="ReadMore()" class="readMore">Read More</button>
-        </div>
-      </div>
-      <div class="middle"id="three">
-        <div class="blogs">
-          <h3>This is a Dummy Blog 3, Nothing special</h3>
-          <h4>Something something</h4>
-          <small>15 August 2022</small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-          <button onclick="ReadMore()" class="readMore">Read More</button>
-        </div><div class="blogs"id="five">
-          <h3>This is a Dummy Blog 5, Nothing special</h3>
-          <h4>Something something</h4>
-          <small>15 August 2022</small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sedclass ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-          <button onclick="ReadMore()" class="readMore">Read More</button>
-        </div>
-        
-      </div>
-      <div class="right"id="four">
-        <div class="blogs">
-          <h3>This is a Dummy Blog 4, Nothing special</h3>
-          <h4>Something something</h4>
-          <small>15 August 2022</small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="moreText">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-          <button onclick="ReadMore()" class="readMore">Read More</button>
-        </div>
-        
-        <div class="blogs"id="six">
-            <h3>This is a Dummy Blog 6, Nothing special</h3>
-            <h4>Something something</h4>
-            <small>15 August 2022</small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-            <button onclick="ReadMore()" class="readMore">Read More</button>
+      <div class="blogs more-open" id="one">
+        <h2 class="blogName">What is Hackoberfest and Why you should care?</h2>
+        <h5>#OpenSource #CodingEvent</h5>
+        <p id="date">1st October 2022<br>
+        <small>2 min 15 sec read</small> 
+        </p>
+        <div class="paragraph">
+          <div class="intro ">
+          I was doing level zero for NeoG.camp. In the second lesson, Tanay sir
+          suggested something interesting named Hactoberfest. I had no idea what
+          it was before. So I started googling around and landed on this website
+          -</div>
+          <div class="more">
+            <a href="https://hacktoberfest.com/"
+              >"https://hacktoberfest.com/"</a><br>
+            <br>
+<h4>What Is This</h4>
+<p>I found it is an annual event by DigitalOcean which encounters people to contribute to other's open source repositories. It is a month-long event which occurs in October every year for the past nine years. Hacktoberfeat is the celebration and awareness of Open Source and giving it back.
+Hang on, What is Open Source, by the way?
+In simple terms, Open Source is any code or program that we can avail freely, modify and redistribute.
+</p>
+<h4>Eligibility</h4>
+<p> The best part is that you don't have to be an expert in anything to contribute. HacktoberFest welcomes people of any experience level and background to participate. Low-code, Non-Code, Technical, Non-technical, You may contribute anywhere. 
+</p>
+<h4>What to do</h4>
+<h5>Short version</h5> 
+<p>Register yourself on the Hacktoberfest website using a Github account and then have four pull/merge requests accepted between October 1 and October 31 to complete Hacktoberfest.
+</p>
+<h5>Long version</h5>
+ <p>
+  <ol>
+<li><p>First, get familiar with some basics of GitHub and its Repositories such as Owner, Author, contributor, ReadMe, Code Of Conduct, Pull request, Issues, etc.</p></li>
+<li><p>Filter and Find out a project where you can contribute something. Within those projects, if you get an instinct that something is wrong or could have been better, See whether you can help.</p></li>
+<li><p>If yes, then check out if it has a license. Next, check if the Project actively accepts contributions or if your hard work can go in vain. Check for the Issues and Pull Requests.</p></li>
+<li><p>Open an issue to discuss a high-level topic or idea, report an error, or propose a new feature.</p>
+</li>
+<li><p>Gather Context, Communicate with owners to get a clear picture of the issue. Try to keep your requests short and Direct in public chats.</p>
+</li>
+<li><p>Open a Pull Request--Steps-Clone the Repository->Fork->create a branch->Edit your Solution->refrence any relevant issue->test your changes->Push to the branch->Compare and Pull Requests.</p></li>
+<li><p>Great! After submitting, wait for the response. ->If you haven't got one in a week, politely ask them in publicly.-> If they request changes, do it if you can & resubmit -> If your request is not accepted, make a classy move, respect their decision, say thanks & move on.-> If your contribution gets approved, Congratulations! Pat yourself on the back and keep contributing.</p></li> 
+
+
+
+
+</ol>
+<h4>Why Join this Fest</h4>
+<ul>
+  <li>{ Learning New Skills }
+    <p>Working with others is the supreme skill you will learn here. Working on different kinds of projects lets you acquire a versatile knowledge set.
+</p>
+  </li>
+  <li>{ Improve your coding }
+    <p>Observing the source code of established authors will help you improve your coding to a greater extent. Watch and learn, Do and Learn, Hit and Trial will eventually make you a better Programmer.
+</p>
+  </li>
+  <li>{ Contributing to Open Source }
+    <p> Many modern Technologies today rely on open source projects. We often look into some other's source code to learn new things or correct our programs, but we never thank or acknowledge their hard work. This event is a way to make them feel supported.
+</p>
+  </li>
+  <li>{ Accelerate your career }
+    <p>You can learn to communicate and collaborate as a team and eventually perform better at your workplace.
+</p>
+  </li>
+  <li>
+{ Building Great connection }
+    <p> You build meaningful collaborations with passionate people around the Globe. Establishing prominent connections can help you become a better version of yourself.
+</p>
+  </li>
+</ul>
+
+ 
+
+
+            
           </div>
+        </div>
+        <p class="readMore">Read More</p>
+      </div>
+      <div class="blogs" id="two">
+        <h3>This is a Dummy Blog 2, Nothing special</h3>
+        <h4>Something something</h4>
+        <small>15 August 2022</small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scel<span class="more"
+            >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+            nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue
+            ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+            dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+            turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+            fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+            tempor porta.</span
+          >
+        </p>
+        <p class="readMore">Read More</p>
+      </div>
+      <div class="blogs" id="three">
+        <h3>This is a Dummy Blog 3, Nothing special</h3>
+        <h4>Something something</h4>
+        <small>15 August 2022</small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scel<span class="more"
+            >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+            nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue
+            ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+            dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+            turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+            fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+            tempor porta.</span
+          >
+        </p>
+        <p class="readMore">Read More</p>
+      </div>
+      <div class="blogs" id="four">
+        <h3>This is a Dummy Blog 4, Nothing special</h3>
+        <h4>Something something</h4>
+        <small>15 August 2022</small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scel<span class="more"
+            >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+            nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue
+            ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+            dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+            turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+            fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+            tempor porta.</span
+          >
+        </p>
+        <p class="readMore">Read More</p>
+      </div>
+      <div class="blogs" id="five">
+        <h3>This is a Dummy Blog 5, Nothing special</h3>
+        <h4>Something something</h4>
+        <small>15 August 2022</small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scel<span class="more"
+            >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+            nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue
+            ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+            dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+            turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+            fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+            tempor porta.</span
+          >
+        </p>
+        <p class="readMore">Read More</p>
       </div>
     </div>
 
-<script type="text/javascript">
-function ReadMore() {
-  var dots = document.getElementsByClassName("dots");
-  var moreText = document.getElementsByClassName("moreText");
-  var btnText = document.getElementsByClassName("readMore");
+    <script type="text/javascript">
+      const btn = document.querySelector(".readMore");
+      const blogs = document.querySelector(".blogs");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
+      const text = document.querySelector(".more");
 
-</script>
+      const BlogsCard = document.querySelector(".blog-content");
 
+      BlogsCard.addEventListener("click", (e) => {
+        const current = e.target;
+
+        const isReadMoreBtn = current.className.includes("readMore");
+
+        if (!isReadMoreBtn) return;
+
+        const currentText = e.target.parentNode.querySelector(".more");
+        currentText.classList.toggle("more-open");
+
+        current.textContent = current.textContent.includes("Read More")
+          ? "Read Less"
+          : "Read More";
+        blogs.style.width = "1000px";
+        text.style.textAlign="left";
+
+      });
+    </script>
   </body>
 </html>

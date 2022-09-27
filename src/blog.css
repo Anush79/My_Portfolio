@@ -1,20 +1,25 @@
 .blog-content {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
   }
   .blogs{
+    
+    width: 40rem;
+    margin: auto;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.15);
     border: 10px solid rgba(225, 225, 225, 0.199);
     padding: 6px;
     font-size: 20px;
     text-align: center;
+    margin-bottom:10px;
   }
+ div{
+  font-size: large;
+ }
  
-  #more{
-    display:none;
-  }
  .hero p{
   margin-top: 2px;
   font-size:35px ;
@@ -23,6 +28,43 @@
     margin: auto;
     transform: scale(0.8);
   }
-  button:hover{
-    transform: none;
+  
+  .blogs .paragraph
+  {
+    text-align: left;
+    
+  font-size: 0.8em;
+  margin-bottom: 1rem;
+  }
+  #date  {
+font-size: 13px;
+text-align: left;
+  }
+  .more{
+    display: none;
+       height: 0;
+    transition: ease-in 2.5s;
+  }
+  .more-open{
+    display: block;
+  opacity: 1;
+  width: auto;
+  height: auto;
+  transition: ease-in-out 0.5s;
+  }
+  .readMore{
+    display: inline-block;
+    color: var(--accent);
+    background-color:var(--primaary);
+    padding: 10px;
+    font-size: 1em;
+    position: relative;
+    z-index: 1;
+     transition: all 0.5s;
+    cursor: pointer;
+  }
+  .readMore:hover{
+    background-color: #fff;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+  transform: translateY(-3px);
   }
