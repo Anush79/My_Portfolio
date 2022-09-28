@@ -54,7 +54,6 @@ text-align: left;
   }
   .readMore{
     display: inline-block;
-    color: var(--accent);
     background-color:var(--primaary);
     padding: 10px;
     font-size: 1em;
@@ -64,7 +63,8 @@ text-align: left;
     cursor: pointer;
   }
   .readMore:hover{
-    background-color: #fff;
+  background-color: var(--tertiary);
+  color:var(--primaary);
   box-shadow: 0 0 2rem rgba(0,0,0,0.1);
   transform: translateY(-3px);
   }
