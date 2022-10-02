@@ -1,13 +1,30 @@
-# adarshbalika
-This is my portfolio website . It includes all my project links and blogs
-This is my Portfolio website. It represents all the projects that i have created as well as my skils and blogs.It is a non-responsive website so it will work best on desktop or Laptop. It also cotains my social media links . This portfolio was made for NeoG.camp that I wish to join. I will keep updating this website.
-Here is the screenshot.
+# My Portfolio Website
+This is my portfolio website . It includes informations about my works and me. 
+It includes all my project links and blogs. It represents all the projects that i have created as well as my skils and blogs.
+I have tried to keep it responsive a little bit. It also cotains my social media links. 
+If there is any suggestion or feedback, one can also write a message to me in the contact form. 
+This portfolio was made for NeoG.camp that I wish to join. I will keep updating this website.
+Here are the screenshots.
+
 Home page
-![image](https://user-images.githubusercontent.com/66175237/191197585-5662ec35-c513-408d-bde6-e7063f9e9b6b.png)
+![image](https://user-images.githubusercontent.com/66175237/193433486-c4b5dc0a-1cbc-4960-9611-8b63039e1247.png)
+![image](https://user-images.githubusercontent.com/66175237/193433768-44ab3897-0177-4f67-bc9e-28be79291e00.png)
+
 
 project page
-![image](https://user-images.githubusercontent.com/66175237/191197705-36313a51-e0e1-441c-9b8c-14a03b121776.png)
+![image](https://user-images.githubusercontent.com/66175237/193433631-70414607-057d-4aa6-8869-2ea55bddfcb0.png)
+
 
 blogs Page
-![image](https://user-images.githubusercontent.com/66175237/191197904-1d652fb1-e976-49a4-821e-d76d1f13f439.png)
+![image](https://user-images.githubusercontent.com/66175237/193433655-81f14f02-f2f4-4119-902d-15a84d301b56.png)
+
+
+![image](https://user-images.githubusercontent.com/66175237/193433665-0b0a6b9a-737a-4dd2-8ee4-2ecd9a00d555.png)
+
+
+contact page 
+![image](https://user-images.githubusercontent.com/66175237/193433421-2f412603-097c-47c3-8d24-dead9b640946.png)
+
+![image](https://user-images.githubusercontent.com/66175237/193433732-55222f51-7bad-4686-8734-299509098fe9.png)
+
 
