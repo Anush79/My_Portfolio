@@ -60,7 +60,8 @@ nav {
 }
 
 .navlink.active a{
-  border-bottom: solid var(--button) 2px;
+  background:#fda416d5;
+  border-radius: 10px;
 }
 
 .navlink a {

@@ -28,6 +28,7 @@
 }
 
 .mark-text-content{
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   gap: 10px;
