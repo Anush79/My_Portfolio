@@ -1,15 +1,36 @@
 #project_list {
   text-align: end;
-  width: 70%;
-  margin: auto;
-  padding: 30px;
   list-style: none;
 }
 .mark {
   padding: 10px;
-  margin: 20px;
-  height: 300px;
+  margin: 20px auto;
+  min-height: 300px;
   transition: 0.3s;
+  max-width: 800px;
+}
+
+.mark *{
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.mark-content{
+  display: flex;
+  justify-content: center;
+  text-align-last: left;
+  gap: 20px;
+  padding: 10px;
+}
+.mark-content >*{
+  flex: 1;
+}
+
+.mark-text-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 h3 {
@@ -18,62 +39,81 @@ h3 {
   margin: 10px 0px;
   background: #fec260;
   padding: 5px;
-  width: 460px;
+  width: 60%;
   transition: ease-in 3s;
 }
 h3:hover {
   animation: mymove 2s;
 }
+
 img {
-  position: absolute;
-  width: 30%;
-  height: 26%;
-  left: 301px;
+  width: 100%;
   z-index: -1;
 }
 .mark p {
-  position: relative;
-  display: inline-block;
-  left: 45%;
-  width: 50%;
   text-align: justify;
-}
-button {
-    position: relative;
-  transform: scale(0.8);
-  display: inline;
-  position: relative;
-  top:15%;
-  padding: 10px 0px;
+  padding: 0;
 }
 
-#code {
+.btn-wrapper{
+  display: flex;
+  gap: 10px;
+}
+
+.btn{
+  padding: 10px 15px;
+  transform: scale(1);
+}
+
+.code {
   background: none;
   border: 3px dashed #fec260;
-  padding: 10px;
 }
-#demo {
+.code:hover{
+  border: 3px dashed #fec260;
+}
+.demo {
   border: 3px dotted #fec260;
   border-left: none;
   border-right: none;
-
 }
-button:hover,
-button:focus-visible {
-
-  transform: scale(1.2);
+.demo:hover{
+  border: 3px dotted #fec260;
+}
+.btn:hover,
+.btn:focus-visible {
+  transform: scale(1.1);
   letter-spacing: normal;
   transition: 0.4s;
 }
 @keyframes mymove {
   0% {
-    width: 460px;
+    width: 60%;
   }
 
   75% {
-    width: 660px;
+    width: 100%;
   }
   100% {
-    width: 460px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  #project_list{
+    margin: 30px 0;
+  }
+  .mark{
+    margin: 0;
+  }
+  .mark-content{
+    flex-direction: column;
+  }
+  h3{
+    text-align: center;
+    width: 100%;
+  }
+  h3:hover{
+    animation: unset;
   }
 }

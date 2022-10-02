@@ -13,8 +13,6 @@
   box-sizing: border-box;
   font-family: "Oleo Script Swash Caps", cursive;
   font-family: "Quicksand", sans-serif;
-  padding-left: 2rem;
-  padding-right: 2rem;
   color: var(--tertiary);
   text-decoration: none;
 }
@@ -22,6 +20,7 @@
 body {
   background: var(--primary);
   overflow-x: hidden;
+  padding: 0 5vw;
 }
 
 header {
@@ -30,72 +29,80 @@ header {
   border-radius: 63%;
   border-bottom-right-radius: 1%;
   border: 5px solid #2a0944;
-  border-top: #fec260;
-  border-left: #fec260;
+  border-top: var(--tertiary);
+  border-left: var(--tertiary);
   padding: 10px;
 }
 
-header h2 {
+header h2{
   color: var(--primaary);
   margin-right: 10px;
 }
 
-.nav {
+nav {
   background: var(--tertiary);
   border-radius: 20px;
   padding: 10px;
   text-decoration: none;
 }
 
-.navlist {
-  position: relative;
-  left: 45%;
-  font-size: large;
-  list-style: none;
-  display: inline-flex;
+.navWrapper{
+  display: flex;
 }
 
-.navlistrow a {
+.navlist {
+  display: flex;
+  margin-left: auto;
+  font-size: large;
+  list-style: none;
+  gap: 40px;
+  
+}
+
+.navlink.active a{
+  border-bottom: solid var(--button) 2px;
+}
+
+.navlink a {
   justify-content: space-between;
   text-decoration: none;
   color: var(--button);
   font-weight: 800;
+padding: 10px;
 }
 
-.navlistrow a:hover {
+.navlink a:hover {
   transition: 0.6s;
   text-shadow: 0.4em 0.4em 0.2em var(--button);
 }
 
-.content {
-  display: flex;
-  min-height: 560px;
-}
-
-.content .intro {
-  margin-top: 12%;
-  min-width: 40%;
-  max-width: 50%;
-  font-size: 30px;
-  height: 500px;
-}
-
-.content .intro p {
-  font-size: 1.4rem;
-}
-
-.hero img {
-  max-height: 500px;
-  display: block;
-}
-
 .hero {
-  margin-top: 60px;
-  padding: 0px;
-  text-align: center;
-  overflow-x: hidden;
+  display: flex;
+  padding: 80px 0;
+  align-items: center;
+  
 }
 
+.hero >*{
+  flex: 1;
+}
+.hero .intro {
+  font-size: 30px;
+}
+
+.hero .intro p {
+  padding: 0;
+  font-size: 1.4rem;
+  margin: 30px 0;
+}
+.hero img {
+  max-height: 570px;
+  width: 100%;
+}
+.hero-banner h3{
+  text-align: center;
+
+}
 .tech,
 .projects,
 .blogs {
@@ -106,6 +113,19 @@ header h2 {
   margin: 2rem 0px;
   border-radius: 1rem;
   font-size: x-large;
+}
+.tech_img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.tech_svg{
+  animation-name: tech_animate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+max-height: 10%;
+max-width: 10%;
 }
 
 img {
@@ -121,22 +141,31 @@ h3 {
   text-shadow: 0.1em 0.3em 0.2em var(--button);
 }
 
-button {
+.btn {
   background: var(--primaary);
   padding: 10px;
   border-radius: 20px;
   border: var(--primary);
   margin: 15px;
-  border-bottom: 3px solid #fec260;
-  border-left: 2px solid #fec260;
-  transform: scale(1.4);
+  border-bottom: 3px solid var(--tertiary);
+  border-left: 2px solid var(--tertiary);
   cursor: pointer;
+  transition: all ease 0.3s;
 }
-button:hover{
+.btn:hover{
   letter-spacing: 0px;
   transform: scale(1.35);
   border: none;
   transition: 0.5s;
+}
+@keyframes tech_animate
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;}
+100% {transform: rotate(-360deg);left:0px;}
 }
 footer {
   background: var(--tertiary);
@@ -161,3 +190,31 @@ footer ul li a{
   color: var(--button);
 }
 
+@media screen and (max-width:700px) {
+  header{
+    margin: auto;
+  }
+  .navlist{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: auto;
+  }
+  .hero{
+    text-align: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .hero-banner{
+    order: -1;
+  }
+  .tech,
+  .projects,
+  .blogs {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .projects img{
+    order:-1;
+  }
+}
