@@ -186,6 +186,7 @@ footer ul {
 }
 footer ul li{
   display: inline;
+  margin: 20px;
 }
 footer ul li a{
   color: var(--button);
