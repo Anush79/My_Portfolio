@@ -19,7 +19,7 @@ blogs Page
 ![image](https://user-images.githubusercontent.com/66175237/193433655-81f14f02-f2f4-4119-902d-15a84d301b56.png)
 
 
-![image](https://user-images.githubusercontent.com/66175237/193433665-0b0a6b9a-737a-4dd2-8ee4-2ecd9a00d555.png)
+![image](https://user-images.githubusercontent.com/66175237/193575522-da4e3a65-fbd7-4ee5-8013-c00b4bacf624.png)
 
 
 contact page 
