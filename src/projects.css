@@ -76,12 +76,12 @@ img {
   border: 3px dashed #fec260;
 }
 .demo {
-  border: 3px dotted #fec260;
+  border: 3px solid #fec260;
   border-left: none;
   border-right: none;
 }
 .demo:hover{
-  border: 3px dotted #fec260;
+  border: 3px dashed #fec260;
 }
 .btn:hover,
 .btn:focus-visible {
