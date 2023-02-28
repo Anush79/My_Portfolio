@@ -44,6 +44,9 @@ nav {
   border-radius: 20px;
   padding: 10px;
   text-decoration: none;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navWrapper{
@@ -179,6 +182,7 @@ footer {
 footer h2 {
   color: var(--button);
   text-align: center;
+   margin-bottom:0.5rem ;
 }
 
 footer ul {
